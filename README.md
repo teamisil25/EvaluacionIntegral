@@ -7,7 +7,7 @@ Este repositorio contiene el código fuente del sitio web oficial de la Instituc
 El sitio web ha sido desarrollado siguiendo las mejores prácticas de diseño y desarrollo web, incorporando las siguientes características clave:
 
 * Diseño Visual Atractivo y Coherente:
-    * Paleta de colores armoniosa basada en los tonos institucionales (observados en el logo y elementos del CSS).
+    * Paleta de colores armoniosa basada en los tonos institucionales.
     * Tipografías legibles y consistentes en todo el sitio para una mejor experiencia de lectura.
     * Cuidado meticuloso en el espaciado, márgenes y alineación para una presentación limpia y profesional.
     * Uso de imágenes optimizadas y de alta calidad para realzar el contenido visual.
@@ -81,4 +81,4 @@ Si deseas contribuir a este proyecto, por favor, sigue las directrices de contri
 
 ## 📄 Licencia
 
-Este proyecto está bajo la Licencia [Nombre de tu Licencia, ej. MIT License].
+Este proyecto está bajo la Licencia [MIT License].
