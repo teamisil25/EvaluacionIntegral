@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libro de Reclamaciones IE-7091</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo-texto">
+            <img src="imagenes/logo.png" alt="logo de la institucion">
+            <div>
+                <h1>IE - 7091</h1>
+                <p>Replubica del Perú</p>
+            </div>
+        </div>
+
+        <nav>
+            <ul>
+               <li class="nav-item"><a class="nav-link fw-bold text-dark" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link fw-bold text-dark" href="admision.html">Admisión</a></li>
+                <li class="nav-item"><a class="nav-link fw-bold text-dark" href="#">Nosotros</a></li>
+            </ul>
+        </nav>
+        <div class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-admision">
+            <div class="hero-admision-content">
+                <h2 class="animate-text">Libro de Reclamaciones</h2>
+                <p class="animate-admision-content">Su opinión es importante. Por favor, complete el siguiente formulario para registrar su reclamo o queja.</p>
+            </div>
+        </section>
+
+        <section class="contact-form-section" style="padding: 50px 20px; max-width: 800px; margin: 0 auto;">
+            <h2 class="animate-heading" style="text-align: center; margin-bottom: 30px;">Formulario de Reclamación/Queja</h2>
+            <div style="background-color: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                <form action="#" method="POST" style="display: grid; grid-template-columns: 1fr; gap: 20px;">
+                    <p style="font-size: 1rem; color: #555; text-align: center; margin-bottom: 20px;">De acuerdo a lo establecido en el Código de Protección y Defensa del Consumidor, esta institución cuenta con un Libro de Reclamaciones a su disposición.</p>
+
+                    <h3 style="margin-top: 20px; color: #0d2533;">1. Identificación del Consumidor</h3>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <div>
+                            <label for="nombre" style="display: block; margin-bottom: 5px; font-weight: bold;">Nombre Completo</label>
+                            <input type="text" id="nombre" name="nombre" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+                        </div>
+                        <div>
+                            <label for="documento" style="display: block; margin-bottom: 5px; font-weight: bold;">Tipo y Número de Documento</label>
+                            <select id="tipo_documento" name="tipo_documento" style="width: 30%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; margin-right: 2%;">
+                                <option value="DNI">DNI</option>
+                                <option value="CE">C.E.</option>
+                                <option value="PAS">PASAPORTE</option>
+                            </select>
+                            <input type="text" id="numero_documento" name="numero_documento" required style="width: 68%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="domicilio" style="display: block; margin-bottom: 5px; font-weight: bold;">Domicilio</label>
+                        <input type="text" id="domicilio" name="domicilio" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+                    </div>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <div>
+                            <label for="telefono" style="display: block; margin-bottom: 5px; font-weight: bold;">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+                        </div>
+                        <div>
+                            <label for="email" style="display: block; margin-bottom: 5px; font-weight: bold;">Email</label>
+                            <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+                        </div>
+                    </div>
+
+                    <h3 style="margin-top: 30px; color: #0d2533;">2. Identificación del Bien Contratado</h3>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <div>
+                            <label for="tipo_bien" style="display: block; margin-bottom: 5px; font-weight: bold;">Tipo de Bien/Servicio</label>
+                            <select id="tipo_bien" name="tipo_bien" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+                                <option value="">Seleccione</option>
+                                <option value="servicio_educativo">Servicio Educativo</option>
+                                <option value="otro_servicio">Otro Servicio</option>
+                                <option value="producto">Producto</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="monto" style="display: block; margin-bottom: 5px; font-weight: bold;">Monto Reclamado (Opcional)</label>
+                            <input type="number" id="monto" name="monto" min="0" step="0.01" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="fecha_contratacion" style="display: block; margin-bottom: 5px; font-weight: bold;">Fecha de Contratación/Incidencia</label>
+                        <input type="date" id="fecha_contratacion" name="fecha_contratacion" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+                    </div>
+
+                    <h3 style="margin-top: 30px; color: #0d2533;">3. Detalle de la Reclamación/Queja</h3>
+                    <div>
+                        <label for="tipo_solicitud" style="display: block; margin-bottom: 5px; font-weight: bold;">Tipo de Solicitud</label>
+                        <select id="tipo_solicitud" name="tipo_solicitud" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+                            <option value="">Seleccione</option>
+                            <option value="reclamo">Reclamo (Disconformidad relacionada a los productos o servicios)</option>
+                            <option value="queja">Queja (Molestia o descontento respecto a la atención al público)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="descripcion" style="display: block; margin-bottom: 5px; font-weight: bold;">Descripción del Reclamo/Queja</label>
+                        <textarea id="descripcion" name="descripcion" rows="6" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; resize: vertical;"></textarea>
+                    </div>
+                    <div>
+                        <label for="pedido" style="display: block; margin-bottom: 5px; font-weight: bold;">Pedido del Consumidor</label>
+                        <textarea id="pedido" name="pedido" rows="4" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; resize: vertical;"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary animate-button" style="padding: 12px 25px; font-size: 1.1rem; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease; background-color: #0d2533; color: white;">Enviar Reclamo/Queja</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="logo-texto">
+            <img src="imagenes/logo.png" alt="Logo de la institución">
+            <div>
+              <h3>IE - 7091</h3>
+              <p>República del Perú</p>
+            </div>
+          </div>
+          <p>Formando el futuro con educación de calidad y valores sólidos.</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/ie7091/" target="_blank" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/ie_7091_ves/" target="_blank" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-twitter"></a>
+          </div>
+        </div>
+        <div class="footer-items">
+          <h4>Acerca</h4>
+          <ul>
+            <li><a href="admision.html">Admisión</a></li>
+            <li><a href="destacados.html">Destacados</a></li>
+            <li><a href="alianza.html">Alianza</a></li>
+            <li><a href="trabaja-con-nosotros.html">Trabaja con nosotros</a></li>
+          </ul>
+        </div>
+        <div class="footer-items">
+          <h4>Comunidad</h4>
+          <ul>
+            <li><a href="eventos.html">Eventos</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="podcast.html">Podcast</a></li>
+            <li><a href="noticias.html">Noticias</a></li>
+          </ul>
+        </div>
+        <div class="footer-items">
+          <h4>Socials</h4>
+          <ul>
+            <li><a href="https://www.instagram.com/ie_7091_ves/" target="_blank">Instagram</a></li>
+            <li><a href="https://www.facebook.com/ie7091/" target="_blank">Facebook</a></li>
+            <img src="imagenes/lr-mag.png" alt="Lr" class="lr-img-footer">
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom-text">
+          <p>© 2026 Matrícula Escolar.</p>
+        </div>
+        <div class="footer-bottom-text">
+          <a href="politica-privacidad.html">Política de privacidad</a>
+        </div>
+        <div class="footer-bottom-text">
+          <a href="terminos-condiciones.html">Términos y condiciones</a>
+        </div>
+        <div class="footer-bottom-text">
+          <a href="contactenos.html">Contacto: contacto@ie7091.com</a>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
